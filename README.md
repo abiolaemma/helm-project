@@ -66,7 +66,7 @@ helm repo list
 ```bash
 helm search repo <repo-name>  
 
-helm install your-chart-name your-repo-name/your-chart-name
+helm install <release-name> <your-repo-name/your-chart-name>
 ```
 Replace "your-repo-name" and "your-chart-name" with the appropriate names.
 
@@ -74,3 +74,21 @@ Replace "your-repo-name" and "your-chart-name" with the appropriate names.
 - search charts under the repo
 ```bash
 helm search repo <repo-name> 
+```
+- deploy application using helm
+```bash
+helm install <chart-dir>
+``` 
+- uninstall helm deployments
+```bash
+helm uninstall <release-name>
+```
+- make changes to deployment
+```bash
+helm upgrade <release-name>
+```
+
+- get history of revision changes to deployment
+```bash
+helm history <release-name>
+```
