@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  tower-batch:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-14T21:05:32.8854437-07:00"
+    description: A Helm chart for Kubernetes
+    digest: e4f6071b1c33e2c8b874849526cc61704c19524f561dea30a0dc26666246ed54
+    name: tower-batch
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/anselmenumbisia/helm-repo/main/tower-batch-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-11-14T21:05:32.8832584-07:00"
