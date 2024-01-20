@@ -92,7 +92,6 @@ This will create a '**.tgz**' file in your current directory.
 ```bash
 helm repo index .
 ```
-Replace "your-username" and "your-helm-charts-repo" with your GitHub username and the name of your github repository.
 
 2. Commit and push the changes to the GitHub repository:
 
@@ -117,12 +116,20 @@ Replace "your-username" and "your-helm-charts-repo" with your GitHub username an
 helm repo list 
 ```
 
-## step 8: Deploy the helm helm chart
+## step 8: Deploy the helm helm chart. First search the repo to get chart name
 
 ```bash
 helm search repo <repo-name>  
+```
+Then install helm chart
 
+```bash
 helm install <release-name> <your-repo-name/your-chart-name>
 ```
 Replace "your-repo-name" and "your-chart-name" with the appropriate names.
 
+## step 9: Uninstall chart
+
+```bash
+helm uninstall <release-name>
+```
