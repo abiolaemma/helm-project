@@ -8,14 +8,14 @@ helm create <chart-name>
 ```bash
 helm lint <chart>
 ```
-- show template of all manifest configurations in hte helm chart
+- show template of all manifest configurations in the helm chart
 
 ```bash
 helm template <char>t
 ```
 - Deploy a helm chart on the kubernetes cluster
 ```bash
-helm install <releasen-name> <chart-direcotry>
+helm install <release-name> <chart-direcotry>
 ```
 
 - list all helm releases/deployments
